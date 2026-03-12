@@ -1,0 +1,64 @@
+{
+  "name": "Demo Token List",
+  "timestamp": "2024-01-01T00:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 11155111,
+      "address": "0x286CbA8b0d967E47c3f0D5d441b44a2a7D33fe1e",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://assets.coingecko.com/coins/images/325/small/Tether.png"
+    }
+  ]
+}
+```
+
+**Step 7** — Scroll down and click **"Commit new file"**
+
+---
+
+## Part 2 — Enable GitHub Pages
+
+**Step 1** — Click **"Settings"** tab inside your repository
+
+**Step 2** — Scroll down left sidebar and click **"Pages"**
+
+**Step 3** — Under **"Branch"** select **"main"** and click **"Save"**
+
+**Step 4** — Wait 2 minutes then your token list URL will be:
+```
+https://YOUR-GITHUB-USERNAME.github.io/token-list/tokenlist.json
+```
+
+Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username and send it to me — I will verify it's working correctly before we move to the next step!
+
+---
+
+## Part 3 — Add to MetaMask (after GitHub Pages is live)
+
+Once your URL is working:
+
+1. Open **app.uniswap.org** on Sepolia
+2. Click any token selector
+3. Click **"Manage"** → **"Lists"**
+4. Paste your GitHub Pages URL
+5. Click **"Add list"**
+
+Your fake USDT logo will now show everywhere!
+
+---
+
+## Part 4 — Add Dollar Value on Uniswap
+
+While GitHub Pages is setting up, let's prepare the liquidity step simultaneously.
+
+1. Go to **app.uniswap.org**
+2. Connect MetaMask on **Sepolia**
+3. Click **"Pool"** at the top
+4. Click **"New Position"**
+5. Select **ETH** as first token
+6. Select your USDT using address:
+```
+0x286CbA8b0d967E47c3f0D5d441b44a2a7D33fe1e
